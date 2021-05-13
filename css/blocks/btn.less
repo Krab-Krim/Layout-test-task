@@ -1,0 +1,88 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 72px;
+  height: 28px;
+
+  border: 1px solid @blue;
+  background-color: @blue;
+  border-radius: 1.8em;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 1.06rem;
+  line-height: 1.1;
+  color: @grey;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  transition: background-color .2s linear, color .2s linear, box-shadow .2s linear, border-color .2s linear;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: @light_blue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: @white;
+    border-color: @light_blue;
+  }
+
+
+  &__info {
+    display: inline-block;
+    vertical-align: top;
+    width: 187px;
+    height: 52px;
+    border: 1px solid @yellow;
+    background-color: @yellow;
+    border-radius: 23px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.06rem;
+    line-height: 1.1;
+    color: @pale_black;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 53px;
+    position: absolute;
+
+    &--mobile {
+      width: 165px;
+      height: 44px;
+      font-size: 0.93rem;
+
+      &-new {
+        width: 193px;
+        height: 44px;
+        border-radius: 10px;
+        background: #FED74B;
+        border: 0.5px solid #CBA500;
+        margin-left: 19px;
+      }
+    }
+  }
+
+  &--sm {
+    text-transform: none;
+  }
+
+  &--mobile {
+    height: 24px;
+    width: 63px;
+    font-size: 0.93rem;
+
+    &--pos {
+      margin-left: 28px;
+    }
+
+
+  }
+
+}
+
+#p-caption-display {
+  display: none;
+}
